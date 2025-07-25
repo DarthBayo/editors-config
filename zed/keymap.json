@@ -17,5 +17,12 @@
     "bindings": {
       // "j k": "vim::SwitchToNormalMode"
     }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-tab": "pane::ActivateNextItem",
+      "ctrl-shift-tab": "pane::ActivatePreviousItem"
+    }
   }
 ]
