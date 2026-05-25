@@ -7,34 +7,53 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "agent": {
-    "default_model": {
-      "provider": "copilot_chat",
-      "model": "claude-sonnet-4"
-    }
+  "icon_theme": "Zed (Default)",
+  "theme": "One Dark",
+  "buffer_line_height": "comfortable",
+  "ui_font_size": 14,
+  "buffer_font_size": 13.0,
+  "project_panel": {
+    "dock": "left",
+    "default_width": 360,
   },
+  "debugger": {
+    "dock": "left",
+  },
+  "tab_bar": {
+    "show_nav_history_buttons": false,
+  },
+  "tabs": {
+    "file_icons": true,
+    "git_status": true,
+  },
+  "title_bar": {
+    "show_menus": true,
+  },
+  "preview_tabs": {
+    "enabled": false,
+    "enable_preview_from_file_finder": true,
+  },
+  "file_finder": {
+    "modal_max_width": "medium",
+  },
+
+  // RELATED WITH VIM
   "vim_mode": true,
   "vim": {
     "use_smartcase_find": true,
-    "use_system_clipboard": "always",
-    "highlight_on_yank_duration": 1,
-    "toggle_relative_line_numbers": true
+    "toggle_relative_line_numbers": true,
   },
-  "vertical_scroll_margin": 15,
-  "ui_font_size": 16,
-  "buffer_font_size": 16,
-  "theme": {
-    "mode": "dark",
-    "light": "One Light",
-    "dark": "One Dark"
-  },
-  "project_panel": {
-    "default_width": 360
-  },
+  "relative_line_numbers": "enabled",
+  "vertical_scroll_margin": 12.0,
+  "horizontal_scroll_margin": 12.0,
+
+  // LSPs OR SO
   "languages": {
     "PHP": {
-      "format_on_save": null,
-      "language_servers": ["intelephense"]
-    }
-  }
+      "format_on_save": "on",
+      "language_servers": ["intelephense"],
+    },
+  },
+
+  // AI Stuff
 }
