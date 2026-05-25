@@ -9,13 +9,13 @@
   {
     "context": "Workspace",
     "bindings": {
-      // "shift shift": "file_finder::Toggle"
+      // "shift shift": "file_finder::Toggle",
     },
   },
   {
-    "context": "Editor && vim_mode == insert",
+    "context": "ProjectPanel && not_editing",
     "bindings": {
-      // "j k": "vim::NormalBefore"
+      "z": "project_panel::CollapseAllEntries",
     },
   },
   {
