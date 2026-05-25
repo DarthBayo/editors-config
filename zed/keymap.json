@@ -10,19 +10,21 @@
     "context": "Workspace",
     "bindings": {
       // "shift shift": "file_finder::Toggle"
-    }
+    },
   },
   {
-    "context": "Editor && vim_mode == insert && !menu",
+    "context": "Editor && vim_mode == insert",
     "bindings": {
-      // "j k": "vim::SwitchToNormalMode"
-    }
+      // "j k": "vim::NormalBefore"
+    },
   },
   {
     "context": "Editor",
     "bindings": {
       "ctrl-tab": "pane::ActivateNextItem",
-      "ctrl-shift-tab": "pane::ActivatePreviousItem"
-    }
-  }
+      "ctrl-shift-tab": "pane::ActivatePreviousItem",
+      "alt-l": "pane::ActivateNextItem",
+      "alt-h": "pane::ActivatePreviousItem",
+    },
+  },
 ]
